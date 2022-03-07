@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "dev-refresh": "^1.2.1",
+    "handlebars": "^4.7.7",
+    "html-prettify": "^1.0.5",
+    "uglifycss": "^0.0.29"
+  },
+  "main": "build.js",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "dev-refresh src --serve public --cmd 'npm run build'"
+  }
+}
