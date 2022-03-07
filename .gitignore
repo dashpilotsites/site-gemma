@@ -1,0 +1,5 @@
+node_modules
+.DS_Store
+/public/*.html
+/public/work/*.html
+/public/assets/style.min.css
