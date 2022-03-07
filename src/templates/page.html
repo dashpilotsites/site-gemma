@@ -86,13 +86,17 @@
           <div class="text">
             <h1>{{curItem.title}}</h1>
 
-            <p>{{{curItem.body}}}</p>
-
+            <p>{{curItem.subtitle}}</p>
           </div>
 
           {{#each curItem.gallery}}
             <img src="/img/{{this.filename}}" class="img-fluid" />
           {{/each}}
+
+
+          <div class="text">
+            <p>{{{curItem.body}}}</p>
+          </div>
 
 
           <div class="row mt-5">
