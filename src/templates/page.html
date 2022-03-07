@@ -69,10 +69,11 @@
               <div class="text">
                 <h1>{{title}}</h1>
 
-                <p>
+                {{#if main_image}}<img src="img/{{main_image}}" class="img-fluid" />{{/if}}
 
-                  {{{body}}}
-                </p>
+                {{{body}}}
+
+
               </div>
 
             {{/ifEq}}
