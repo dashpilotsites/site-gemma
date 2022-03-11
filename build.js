@@ -19,6 +19,11 @@ Handlebars.registerHelper('ifEq', function(arg1, arg2, options) {
   return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
 });
 
+Handlebars.registerHelper('ifNotEq', function (a, b, options) {
+    if (a != b) { return options.fn(this); }
+    return options.inverse(this);
+});
+
 Handlebars.registerHelper('ifGt', function(a, b) {
   var next = arguments[arguments.length - 1];
   return (a > b) ? next.fn(this) : next.inverse(this);
