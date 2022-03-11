@@ -49,7 +49,7 @@
         <div class="row">
           {{#each posts}}
             {{#ifEq this.category ../curPage.slug}}
-              {{#ifNotEq this.draft 'true'}}
+              {{#ifNotEq this.draft true}}
               <div class="col-md-4">
                 {{#if main_image}}
                   <div class="wrap">
