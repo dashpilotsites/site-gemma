@@ -19,9 +19,11 @@ Handlebars.registerHelper('ifEq', function(arg1, arg2, options) {
   return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
 });
 
-Handlebars.registerHelper('ifNotEq', function (a, b, options) {
-    if (a != b) { return options.fn(this); }
-    return options.inverse(this);
+Handlebars.registerHelper('ifNotEq', function(a, b, options) {
+  if (a != b) {
+    return options.fn(this);
+  }
+  return options.inverse(this);
 });
 
 Handlebars.registerHelper('ifGt', function(a, b) {
@@ -39,12 +41,14 @@ data.categories.forEach(function(item) {
   renderTemplate('page.html', item.slug + ".html", data);
 })
 
+/*
 data.current = 'item';
 data.posts.forEach(function(item) {
   data.curPage = data.categories.filter(x => x.slug = item.category)[0];
   data.curItem = item;
   renderTemplate('page.html', "work/" + item.slug + ".html", data);
 })
+*/
 
 function renderTemplate(src, dest, data) {
   var source = fs.readFileSync('./src/templates/' + src, 'utf8');

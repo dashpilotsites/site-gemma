@@ -47,16 +47,16 @@
 
       {{#ifEq curPage.type 'default'}}
         <div class="row">
-          {{#each posts}}
+          {{#each curPage.posts}}
             {{#ifEq this.category ../curPage.slug}}
               {{#ifNotEq this.draft true}}
-              <div class="col-md-4">
-                {{#if main_image}}
-                  <div class="wrap">
-                    <a class="stage" href="/work/{{slug}}.html" up-follow up-transition="cross-fade" style="background-image: url(img/{{main_image}});"></a>
-                  </div>
-                {{/if}}
-              </div>
+                <div class="col-md-4">
+                  {{#if main_image}}
+                    <div class="wrap">
+                      <a class="stage" href="/work/{{slug}}.html" up-follow up-transition="cross-fade" style="background-image: url(img/{{main_image}});"></a>
+                    </div>
+                  {{/if}}
+                </div>
               {{/ifNotEq}}
             {{/ifEq}}
           {{/each}}
@@ -65,7 +65,7 @@
 
       {{#ifEq curPage.type 'post'}}
         <div class="row">
-          {{#each posts}}
+          {{#each curPage.posts}}
             {{#ifEq this.category ../curPage.slug}}
 
               <div class="text">
