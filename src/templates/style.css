@@ -5,6 +5,10 @@ body {
   line-height: 27px;
 }
 
+p{
+  margin: 0;
+}
+
 h1{
   font-family: "Source Sans Pro", sans-serif;
   text-transform: uppercase;
