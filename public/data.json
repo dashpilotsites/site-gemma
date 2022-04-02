@@ -408,7 +408,7 @@
       "body": "richtext",
       "main_image": "image",
       "gallery": "gallery",
-      "youtube": "text",
+      "youtube_id": "text",
       "gif": "text",
       "draft": "switch"
     },
