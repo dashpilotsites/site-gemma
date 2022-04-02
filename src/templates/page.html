@@ -92,6 +92,12 @@
             <p>{{curItem.subtitle}}</p>
           </div>
 
+          {{#if curItem.youtube_id}}
+            <div class="ratio ratio-16x9">
+              <iframe src="https://www.youtube.com/embed/{{curItem.youtube_id}}?rel=0" allowfullscreen></iframe>
+            </div>
+          {{/if}}
+
           {{#each curItem.gallery}}
             <img src="/img/{{this.filename}}" class="img-fluid" />
           {{/each}}
