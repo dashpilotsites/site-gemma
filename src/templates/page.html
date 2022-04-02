@@ -102,6 +102,10 @@
             <img src="/gif/{{curItem.gif}}" class="img-fluid" />
           {{/if}}
 
+          {{#if curItem.gif_2}}
+            <img src="/gif/{{curItem.gif_2}}" class="img-fluid" />
+          {{/if}}
+
           {{#each curItem.gallery}}
             <img src="/img/{{this.filename}}" class="img-fluid" />
           {{/each}}
