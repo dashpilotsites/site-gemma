@@ -98,10 +98,13 @@
             </div>
           {{/if}}
 
+          {{#if curItem.gif}}
+            <img src="/gif/{{curItem.gif}}" class="img-fluid" />
+          {{/if}}
+
           {{#each curItem.gallery}}
             <img src="/img/{{this.filename}}" class="img-fluid" />
           {{/each}}
-
 
           <div class="text">
             <p>{{{curItem.body}}}</p>
