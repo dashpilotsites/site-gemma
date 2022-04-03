@@ -59,7 +59,7 @@ nav {
 .container {
   max-width: 1024px;
   text-align: center;
-  margin-bottom: 75px;
+  margin-bottom: 40px;
 }
 
 .wrap {
@@ -82,7 +82,7 @@ nav {
 }
 
 .stage:hover {
-  /* transform: scale(1.1); */
+  transform: scale(1.05);
 }
 
 .text{
@@ -104,6 +104,21 @@ nav {
 .detail{
   max-width: 750px;
   margin: 0 auto;
+}
+
+footer{
+  padding-bottom: 40px;
+}
+
+footer .fab{
+  font-size: 25px;
+  margin: 5px;
+  color: #E73523;
+}
+
+footer .fab:hover{
+  color: #333;
+  cursor: pointer;
 }
 
 /* --- nav --- */
