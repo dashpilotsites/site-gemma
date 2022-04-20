@@ -72,9 +72,14 @@
               <div class="text">
                 <h1>{{title}}</h1>
 
-                {{#if main_image}}<img src="img/{{main_image}}" class="img-fluid" />{{/if}}
-
-                {{{body}}}
+                <div class="row">
+                  <div class="col-md-4">
+                    {{#if main_image}}<img src="img/{{main_image}}" class="img-fluid" />{{/if}}
+                  </div>
+                  <div class="col-md-8">
+                    {{{body}}}
+                  </div>
+                </div>
 
 
               </div>
