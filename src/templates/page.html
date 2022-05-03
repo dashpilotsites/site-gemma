@@ -3,6 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>{{#ifEq current 'page'}}{{curPage.title}}{{else}}{{curItem.title}}{{/ifEq}} - {{settings.site_title}}</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
@@ -27,7 +29,7 @@
     <a href="/" up-follow up-target="#main" up-transition="cross-fade"><img src="/assets/logo.jpg" class="logo" /></a>
   </header>
 
-  <nav class="text-center mb-5">
+  <nav class="text-center">
 
     <div up-nav>
       {{#each categories}}
@@ -74,7 +76,7 @@
 
                 <div class="row">
                   <div class="col-md-4">
-                    {{#if main_image}}<img src="img/{{main_image}}" class="img-fluid mt-1" />{{/if}}
+                    {{#if main_image}}<img src="img/{{main_image}}" class="img-fluid mt-1 portrait" />{{/if}}
                   </div>
                   <div class="col-md-8 text-start">
                     <h1>{{title}}</h1>
