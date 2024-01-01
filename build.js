@@ -41,7 +41,6 @@ data.categories.forEach(function(item) {
   renderTemplate('page.html', item.slug + ".html", data);
 })
 
-
 data.current = 'item';
 data.categories.forEach(function(cat) {
   cat.posts.forEach(function(item) {
