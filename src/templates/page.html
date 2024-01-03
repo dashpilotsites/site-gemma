@@ -117,11 +117,11 @@
           <div class="text">
             <h1>{{curItem.title}}</h1>
 
+            <p>{{curItem.subtitle}}</p>
+
                 <!-- text on top for page 'selectie' -->
                 {{#ifEq curItem.category 'selectie'}}
                    <p>{{{curItem.body}}}</p>
-                {{else}}
-                   <p>{{curItem.subtitle}}</p>
                 {{/ifEq}}
 
           </div>
